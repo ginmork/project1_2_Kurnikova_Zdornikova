@@ -3,6 +3,11 @@ fun main(args: Array<String>) {
     var line = readln()
     println()
 
+    if (line.isEmpty()) {
+        print("Error")
+        return
+    }
+
     var count = IntArray(256)
 
     for (i in line) {
